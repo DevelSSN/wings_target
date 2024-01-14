@@ -6,7 +6,7 @@ import java.util.*;
     
 
 
-public class Solution {
+public class Solution120124 {
     public static int birthday(ArrayList<Integer> s, int d, int m) {
     // Write your code here
         int sum, j, count=0;
