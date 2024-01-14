@@ -1,4 +1,4 @@
-package com.wings;
+package com.wings_cp;
 
 import java.util.Scanner;
 
