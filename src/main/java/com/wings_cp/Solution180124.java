@@ -48,8 +48,6 @@ public class Solution180124 {
     public static void main(String[] args) throws IOException {
         Scanner sc=new Scanner(System.in);
         BufferedReader bufferedReader=new BufferedReader(new InputStreamReader(System.in));
-        System.out.println("Enter n:");
-        int n=sc.nextInt();
         System.out.println("Input list:");
         List<Integer> arr = Stream.of(bufferedReader.readLine().replaceAll("\\s+$", "").split(" "))
             .map(Integer::parseInt)
