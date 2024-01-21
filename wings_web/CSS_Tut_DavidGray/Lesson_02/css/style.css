@@ -1,0 +1,55 @@
+/* General/element Selectors */
+/* Universal selector *- For CSS Reset BY BROSWER; CANNOT
+BE CHANGED*/
+
+/* BODY/HTML */
+
+html {
+    font-size: 22px;
+    border: 3px solid black;
+}
+
+main {
+    font-family: cursive;
+}
+/* Selectors can be grouped.
+However, use COMMA, else ENGINE checks for h2 inside h1 */
+h1, h2 {
+    color: blue;
+}
+
+/* Following rules inherit body.font-size
+Things with font are inherited 
+FORM elemetns do not inherit
+USE font-size: inherit; */
+
+.gray{
+    color: gray;
+}
+
+
+p {
+    color: purple;
+}
+
+p {
+    color: red;
+}
+/* 
+p span {
+    text-transform: uppercase;
+    background-color: gold;
+} */
+
+/* Class selectors */
+.highlight {
+    text-transform: uppercase;
+    background-color: gold;
+}
+
+
+/* Second */
+#second {
+        font-style: italic;
+}
+/*  */
