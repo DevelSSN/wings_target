@@ -13,20 +13,23 @@
   }
 body {
     font-size: 1rem;
-    border: 7.5px double red;
+    background-color: #6699CC;
+    border: 7.5px solid #ff4242;
     border-radius: 5px;
     width: 75%;
     margin: 1em auto;
-    padding: 1em 1.5em;
+
 }
 
 header {
+    background-color: #faa916;
     font-family: 'Times New Roman', Times, serif;
     font-size: 2rem;
     padding: 0.5em;
 }
 
 .quoteContainer {
+    background-color: #faa916;
     font-family: 'Halimun', sans-serif;
     font-size: 3rem;
     padding: 1em;
@@ -38,6 +41,7 @@ header {
 }
 
 footer {
+    background-color: #faa916;
     text-align: right;
     padding: 0.5em;
     padding-left: 1em;
