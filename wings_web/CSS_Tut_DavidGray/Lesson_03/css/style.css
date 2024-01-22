@@ -1,0 +1,11 @@
+body {
+    font-size: 22px;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.5;
+    background: #ffefd5; /*or bgcolor*/
+    color: rgb(0, 0, 0);
+}
+/* coolors.co */
+p {
+    color: #333333;
+}
