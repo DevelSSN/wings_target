@@ -1,0 +1,40 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: "My Custom Font";
+    src: url(https://github.com/DevelSSN/wings_target/wings_web/Assignments/unusualfonts/Halimun.ttf) format("truetype");
+}
+body {
+    font-size: 1rem;
+    border: 7.5px double red;
+    border-radius: 5px;
+    width: fit-content;
+    margin: 1em auto;
+    padding: 1em 1.5em;
+}
+
+header {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 2rem;
+    padding: 0.5em;
+}
+
+.quoteContainer {
+    font-family: barcelona;
+    font-size: 3rem;
+    padding: 1em;
+    padding-bottom: 0.25em;
+}
+
+.quote {
+    font-size: 2rem;
+}
+
+footer {
+    padding: 0.5em;
+    padding-left: 1em;
+}
