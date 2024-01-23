@@ -5,3 +5,16 @@ body {
     font-size: 2rem;
     font-family: 'Roboto', sans-serif;
 }
+a{
+    /* Use this for changing link typography */
+}
+a:visited{
+    /* ::before is a pseudoclass to indicate an action */
+
+}
+a:hover a:focus{
+
+}
+a:active{
+
+}

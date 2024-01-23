@@ -5,3 +5,29 @@ body {
   font-size: 2rem;
   font-family: "Roboto", sans-serif;
 }
+ol{
+  list-style-type: decimal-leading-zero;
+}
+ul{
+  text-align: center;
+  list-style-position: inside;
+  /* Inside means inside Block box */
+  list-style:square url("../images/checkmark.png") inside;
+  /* Square becomes fallback */
+}
+
+li{
+  /* Applies for both OL AND UL */
+}
+ul li:nth-child(2){ /* no/even/odd */
+  /* 2nd in list is changed */
+  color: red;
+}
+ul li::marker{
+  /* CHANGES FOR ONLY THE LIST ITEMS, not TEXT INSIDE */
+  color: black;
+  content: "ONLY $5>>  ";
+  
+}
+/* Usually. m1 them m2 means m2>m1
+In Fonts m1>m2 as specific -> class -> family */
