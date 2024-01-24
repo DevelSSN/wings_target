@@ -4,3 +4,32 @@ body {
   font-size: 1.5rem;
   font-family: "Roboto", sans-serif;
 }
+
+.block{
+  width: 30vw;
+  height: 30vw;
+  background-color: black;
+  color: white;
+  padding: 1rem;
+}
+.left{
+  float: left;
+  margin-right: 1rem;
+  /* Margin for text beside,as we cannot do it elsewhere */
+}
+/* Classes to div in html are block and left */
+.right{
+  float: right;
+  margin-left: 1rem;
+  /* Margin for text beside,as we cannot do it elsewhere */
+}
+
+section{
+  background-color: bisque;
+  border: 1px solid #333333;
+  /* overflow: auto; LEGACY Way to Fit container*/
+  display: flow-root; /*IMPORTANT*/
+}
+/* .clear{
+  clear: both;
+}LEGACY CODE */
