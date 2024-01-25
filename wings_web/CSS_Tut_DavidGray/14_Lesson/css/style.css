@@ -16,12 +16,13 @@ body {
   max-width: 800px;
   min-height: 400px;
   margin-inline: auto;
-  border: 1px solid #000;
+  border: 1px solid #000000;
   display: flex;
   gap: 1rem;
   justify-content: center;
-  align-items: center;
-  flex-flow: row wrap;
+  align-items: center;/* ALIGNS COLUMNS*/
+  flex-direction: column; /*Changes main axis direction*/
+  flex-flow: row wrap; /*Shortcut*/
   align-content: space-evenly;
 } 
 
@@ -38,9 +39,19 @@ body {
   align-items: center;
 
   flex: 1 1 150px;
+  /* flex-basis: 100px; For  the basis of flex items*/
 }
 
 .box:nth-child(2) {
   flex: 2 2 150px;
   order: 1;
+  /* flex: grow shrink basis; */
+  /* flex-grow: 1; For growth or shrink, g=with given number as a refrence for scaling up/down*/
+  /* flex-shrink: 1; For growth or shrink, g=with given number as a refrence for scaling up/down*/
+}
+/* Order: Gives order priority
+0 is normal 1>2>3>4 */
+.img-container{
+  display: flex;
+  justify-content: center;
 }

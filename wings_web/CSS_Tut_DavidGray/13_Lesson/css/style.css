@@ -1,4 +1,16 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto&family=Lobster&display=swap");
+/* Position
+Relative -> Relative to parent 
+absolute -> Fixed position wrt latest container not having
+  static position/ancestor 
+sticky: fixed till a spot, then like fixed till its
+  container disappears during scrolling
+fixed: Fixed to given position, during scrolling
+static: the usual 
+
+Z-INDEX: index of layering 1>0
+left:-10000px means in page but not visible
+  so accessinbility readers can read it*/
 
 * {
   margin: 0;
@@ -107,4 +119,5 @@ a:visited {
   top: 30%;
   left: 0;
   z-index: 1;
+  /* zindex:1>0 */
 }
