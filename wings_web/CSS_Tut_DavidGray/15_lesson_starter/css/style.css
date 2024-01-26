@@ -11,12 +11,13 @@ body {
   width:100%;
   min-height: 100vh;
   display: grid;
-  grid-template-columns: repeat(9,1fr);
+  grid-template-columns: repeat(12,1fr);
+  width: 100%;
   grid-auto-rows: 75px auto 75px;
   grid-template-areas: 
-  "hd hd hd hd hd hd hd hd hd hd" 
-  "mn mn mn mn mn mn mn sb sb sb"
-  "ft ft ft ft ft ft ft ft ft ft";
+  "hd hd hd hd hd hd hd hd hd hd hd hd" 
+  "mn mn mn mn mn mn mn mn mn sb sb sb"
+  "ft ft ft ft ft ft ft ft ft ft ft ft";
   gap: 0.5rem;
 }
 .el{
@@ -32,7 +33,6 @@ body {
 
 .sidebar{
   grid-area: sb;
-  grid-template-columns: auto;
   background-color: blue;
 }
 .footer{
