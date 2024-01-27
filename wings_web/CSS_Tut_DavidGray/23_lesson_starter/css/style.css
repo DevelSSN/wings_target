@@ -37,13 +37,16 @@ body {
   min-height: 100vh;
   display: flex;
   flex-flow: column nowrap;
+  justify-content: center;
+  align-content: center;
 }
 
 /* || BLOCKS */
 /* aka components */
 
 .btn {
-  min-width: 100px;
-  min-height: 100px;
+  margin: auto;
+  width: 100px;
+  height: 100px;
   border-radius: 15px;
-}
+} 

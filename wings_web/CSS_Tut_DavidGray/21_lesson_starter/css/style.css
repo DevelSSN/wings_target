@@ -1,5 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Nunito&display=swap");
-
+/* Filter function:changes few filters
+min max, choses respective value from an absolute and a relative one
+clamp like the range min, pref, max value; 
+repeat -> repeat values as no, what
+*/
 /* || RESET */
 * {
   margin: 0;

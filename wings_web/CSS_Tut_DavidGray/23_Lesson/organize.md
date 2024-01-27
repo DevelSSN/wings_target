@@ -2,8 +2,9 @@
 
 -- Follow Your Team
 
--- Use comments to create headers 
+-- Use comments to create headers/labels 
+<!-- || VARIABLES  -->
 
--- Sort properties alphabetically ABCSS
+-- Sort properties alphabetically ABCSS or Groups
 
 -- Larger projects follow a naming convention methodology. For example: BEM - Block, Element, Modifier
