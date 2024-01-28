@@ -29,6 +29,11 @@ jobs:
       url: ${{ steps.deployment.outputs.page_url }}
     runs-on: ubuntu-latest
     steps:
+      - lfs:
+        clean: checkout
+        checkout: self
+        smudge: checkout
+        ignore_errors: false
       - name: Checkout
         uses: actions/checkout@v4
         with: lfs: true
