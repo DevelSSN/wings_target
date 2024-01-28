@@ -1,0 +1,168 @@
+/* || ART GALLERY CSS */
+/* ||IMPORT */
+@import url('https://fonts.googleapis.com/css2?family=Rouge+Script&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto&family=Rouge+Script&display=swap');
+
+/* ||Reset */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+img{
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+input,
+button,
+textarea{
+    font: inherit;
+}
+
+/* Dark Mode Init: Material Theme */
+:root{
+    /* No of Pictures */
+    --NO-OF-PICTURES-PER-ROW: 2;
+    --NO-OF-PICTURES-PER-COLUMN: 3;
+
+    /* Font/Size */
+    --FF-HEADER: "Rouge Script", cursive;
+    --FF: "Roboto", sans-serif;
+    --FS: 2rem;
+    --FS-HEADER: 5rem;
+
+    /* Colors */
+    --PCOLOR: #BB86FC;
+    --P2COLOR: #3700B3;
+    --SCOLOR: #03DAC6;
+    --BGCOLOR: #121212;
+    --ECOLOR: #CF6679;
+    --ONCOLOR: #000000;
+    --TXTCOLOR: #FFFFFF;
+    --O0COLOR: #121212;
+    --O1COLOR: #1E1E1E;
+    --O2COLOR: #222222;
+    --O3COLOR: #242424;
+    --O4COLOR: #272727;
+    --O5COLOR: #2C2C2C;
+    --O6COLOR: #2E2E2E;
+    --O7COLOR: #333333;
+    --O8COLOR: #343434;
+    --O9COLOR: #383838;
+
+     /* BORDERS */
+     --BORDERS: 1px solid var(--BORDER-COLOR);
+     --BORDER-RADIUS: 15px;
+ 
+     /* STANDARD PADDING */
+     --PADDING-TB: 0.25em;
+     --PADDING-SIDE: 2.5%;
+ 
+     /* STANDARD MARGIN/Sizes */
+     --MARGIN: clamp(1em, 2.5vh, 1.5em) 0;
+     --GS-W: 10%;
+     --GS-H: 10vh;
+
+}
+
+@media (prefers-color-scheme: light) {
+    :root{
+        --PCOLOR: #6200EE;
+        --P2COLOR: #3700B3;
+        --SCOLOR: #03DAC6;
+        --BGCOLOR: #FFFFFF;
+        --ECOLOR: #B00020;
+        --ONCOLOR: #FFFFFF;
+        --ON2COLOR: #000000;
+        --TXTCOLOR: #FFFFFF;
+    }
+}
+
+/* ||Utility Classes */
+.center{
+    text-align: center;
+}
+
+/* ||GENERAL CLASSES */
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    background-color: var(--BGCOLOR);
+    color: var(--TXTCOLOR);
+    min-height: 100vh;
+
+    font-size: var(--FS);
+    font-family: var(--FF);
+
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-auto-rows: 100px auto;
+    grid-template-areas: "hr hr hr hr hr hr hr hr hr hr hr hr"
+                         "mn mn mn mn mn mn mn mn mn mn mn mn";
+}
+
+header{
+    z-index: 1;
+    font-family: var(--FF-HEADER);
+    font-size: var(--FS-HEADER);
+    grid-area: hr;
+    position: sticky;
+    top: 0;
+    display: grid;
+    justify-content: center;
+    align-content: center;
+}
+
+h1{
+    font-size: var(--FS-HEADER);
+    letter-spacing: 0.25em;
+}
+
+main{
+    height: fit-content;
+    grid-area: mn;
+
+    display: grid;
+    grid-template-columns: repeat(var(--NO-OF-PICTURES-PER-ROW),1fr);
+    grid-template-rows: repeat(var(--NO-OF-PICTURES-PER-COLUMN),1fr);
+    row-gap: calc(var(--GS-H)*2);
+    justify-items: center;
+}
+
+.container{
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    position: relative;
+}
+
+.container figcaption{
+    width: fit-content;
+    margin:auto auto 0 auto;
+}
+
+.gotoTopButton {
+    scale: 1.5;
+    position: fixed; 
+    bottom: 20px;
+    right: 30px;
+    z-index: 1; 
+    border: none; 
+    outline: none;
+    background-color: var(--O1COLOR); 
+    cursor: pointer;
+    padding: auto;
+    border-radius: 5px; 
+
+  }
+
+  a,
+  a:is(:hover,:focus,::before,::after){
+    text-decoration: none;
+  }
